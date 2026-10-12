@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Prutkov
+    given-names: Evgeny Gennadievich
+    email: sviazist.pr@gmail.com
+title: "PyP528: Python implementation of ITU-R P.528-5"
+version: 0.1.0
+date-released: 2026-10-12
+license: MIT
+url: "https://github.com/NTIA/p528-5"

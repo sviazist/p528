@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "p528"
+version = "0.1.0"
+description = "ITU-R P.528-5 aeronautical propagation prediction"
+readme = "README.md"
+dependencies = [
+    "p676",
+    "p835",
+]
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Evgeny Gennadievich Prutkov", email = "sviazist.pr@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
